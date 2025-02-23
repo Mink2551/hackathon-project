@@ -33,8 +33,8 @@ export default function Page() {
                 <div className='bg-blue-900 h-[90vh] w-[40%]'></div>
                 {/* Right Side */}
                 <div className='bg-bg3 h-[90vh] justify-center flex flex-col items-center w-[60%]'>
-                    <h1 className='text-7xl text-blue-900 font-bold'>Welcome !</h1>
-                    <h2 className='mt-2 font-bold text-bg-2 text-blue-900 text-2xl'>Enter your credentials to sign in</h2>
+                    <h1 className='text-7xl text-bg1 font-bold'>Welcome !</h1>
+                    <h2 className='mt-2 font-bold text-bg-2 text-bg1 text-2xl'>Enter your credentials to sign in</h2>
 
                     <form onSubmit={handleLogin} className='flex flex-col'>
                         <input
@@ -52,12 +52,12 @@ export default function Page() {
                             onChange={(e) => setPassword(e.target.value)}
                         />
                         {error && <p className='text-red-500 mt-2'>{error}</p>}
-                        <button type="submit" className='mt-10 py-2 bg-blue-900 font-bold text-xl text-white w-fit mx-auto px-8'>Sign In</button>
+                        <button type="submit" className='mt-10 py-2 bg-bg1 font-bold text-xl text-white w-fit mx-auto px-8'>Sign In</button>
                     </form>
 
-                    <p className='text-xl font-bold mt-4 text-blue-900 underline'>Forgot Password ?</p>
+                    <p className='text-xl font-bold mt-4 text-bg1 underline'>Forgot Password ?</p>
 
-                    <div className='flex mt-10 font-bold text-lg text-blue-900'>
+                    <div className='flex mt-10 font-bold text-lg text-bg1'>
                         <p>Don't have an account?</p>
                         <Link href='/signup' className='ml-3 underline'>Sign Up</Link>
                     </div>

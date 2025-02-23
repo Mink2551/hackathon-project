@@ -8,7 +8,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        bg1: "#D1F8EF",
+        bg1: "#008794",
         bg2: "#003092",
         bg3: "#fff2db",
       },

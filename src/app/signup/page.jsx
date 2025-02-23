@@ -32,7 +32,7 @@ export default function Page() {
             {/* Card */}
             <div className='flex w-[80vw]'>
                 {/* Left Side */}
-                <div className='bg-bg2 h-[90vh] w-[40%]'></div>
+                <div className='bg-blue-900 h-[90vh] w-[40%]'></div>
                 {/* Right Side */}
                 <div className='bg-bg3 h-[90vh] justify-center flex flex-col items-center w-[60%]'>
                     <h1 className='text-7xl text-bg1 font-bold'>Sign Up</h1>
