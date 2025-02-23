@@ -23,8 +23,8 @@ export default function Home() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-      <div className="bg-white p-6 rounded-lg shadow-md w-80">
-        <h1 className="text-2xl font-bold mb-4 text-center">Welcome</h1>
+      <div className="bg-white p-6 rounded-lg shadow-md w-[800px]">
+        <h1 className="text-5xl font-bold mb-4 text-center">Welcome !</h1>
         <p className="text-gray-600 text-center mb-4">Enter your credentials to sign in</p>
         {error && <p className="text-red-500 text-sm mb-2">{error}</p>}
         <div className="mb-3">
