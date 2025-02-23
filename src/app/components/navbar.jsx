@@ -1,3 +1,4 @@
+import { CiMap } from "react-icons/ci";
 import React from 'react'
 
 function navbar() {
