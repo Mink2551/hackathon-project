@@ -1,5 +1,6 @@
 "use client"
 
+import Navbar from '../components/navbar'
 import React, { useState } from 'react'
 import Link from 'next/link';
 
@@ -7,7 +8,7 @@ export default function Page() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
-  
+
     const handleLogin = (e) => {
         e.preventDefault();
         // Add your login logic here
@@ -22,9 +23,10 @@ export default function Page() {
             setError("Invalid email or password");
         }
     };
-  
+
     return (
-      <div className='min-h-screen bg-bg1 flex justify-center items-center'>
+        <div className='min-h-screen bg-bg1 flex justify-center items-center'>
+            <Navbar />
             {/* Card */}
             <div className='flex w-[80vw]'>
                 {/* Left Side */}
@@ -35,16 +37,16 @@ export default function Page() {
                     <h2 className='mt-2 font-bold text-bg-1 text-bg1 text-2xl'>Enter your credentials to sign in</h2>
 
                     <form onSubmit={handleLogin} className='flex flex-col'>
-                        <input 
-                            type="text" 
-                            className='mt-10 w-[300px] h-[50px] border-gray-500 border text-center' 
+                        <input
+                            type="text"
+                            className='mt-10 w-[300px] h-[50px] border-gray-500 border text-center'
                             placeholder='Email'
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                         />
-                        <input 
-                            type="password" 
-                            className='mt-10 w-[300px] h-[50px] border-gray-500 border text-center' 
+                        <input
+                            type="password"
+                            className='mt-10 w-[300px] h-[50px] border-gray-500 border text-center'
                             placeholder='Password'
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
@@ -61,6 +63,6 @@ export default function Page() {
                     </div>
                 </div>
             </div>
-      </div>
+        </div>
     );
 }

@@ -1,5 +1,6 @@
 "use client"
 
+import Navbar from '../components/navbar'
 import React, { useState } from 'react'
 import Link from 'next/link';
 
@@ -9,7 +10,7 @@ export default function Page() {
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
     const [error, setError] = useState("");
-  
+
     const handleRegister = (e) => {
         e.preventDefault();
         // Add your registration logic here
@@ -24,9 +25,10 @@ export default function Page() {
         // Example registration logic
         alert("Registration successful");
     };
-  
+
     return (
-      <div className='min-h-screen bg-bg1 flex justify-center items-center'>
+        <div className='min-h-screen bg-bg1 flex justify-center items-center'>
+            <Navbar />
             {/* Card */}
             <div className='flex w-[80vw]'>
                 {/* Left Side */}
@@ -37,30 +39,30 @@ export default function Page() {
                     <h2 className='mt-2 font-bold text-bg-1 text-bg1 text-2xl'>Create your account</h2>
 
                     <form onSubmit={handleRegister} className='flex flex-col'>
-                        <input 
-                            type="text" 
-                            className='mt-10 w-[300px] h-[50px] border-gray-500 border text-center' 
+                        <input
+                            type="text"
+                            className='mt-10 w-[300px] h-[50px] border-gray-500 border text-center'
                             placeholder='Username'
                             value={username}
                             onChange={(e) => setUsername(e.target.value)}
                         />
-                        <input 
-                            type="text" 
-                            className='mt-10 w-[300px] h-[50px] border-gray-500 border text-center' 
+                        <input
+                            type="text"
+                            className='mt-10 w-[300px] h-[50px] border-gray-500 border text-center'
                             placeholder='Email'
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                         />
-                        <input 
-                            type="password" 
-                            className='mt-10 w-[300px] h-[50px] border-gray-500 border text-center' 
+                        <input
+                            type="password"
+                            className='mt-10 w-[300px] h-[50px] border-gray-500 border text-center'
                             placeholder='Password'
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                         />
-                        <input 
-                            type="password" 
-                            className='mt-10 w-[300px] h-[50px] border-gray-500 border text-center' 
+                        <input
+                            type="password"
+                            className='mt-10 w-[300px] h-[50px] border-gray-500 border text-center'
                             placeholder='Confirm Password'
                             value={confirmPassword}
                             onChange={(e) => setConfirmPassword(e.target.value)}
@@ -75,6 +77,6 @@ export default function Page() {
                     </div>
                 </div>
             </div>
-      </div>
+        </div>
     );
 }
