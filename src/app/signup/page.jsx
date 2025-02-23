@@ -1,6 +1,5 @@
 "use client"
 
-import Navbar from '../components/navbar'
 import React, { useState } from 'react'
 import Link from 'next/link';
 
@@ -28,7 +27,6 @@ export default function Page() {
 
     return (
         <div className='min-h-screen bg-bg1 flex justify-center items-center'>
-            <Navbar />
             {/* Card */}
             <div className='flex w-[80vw]'>
                 {/* Left Side */}

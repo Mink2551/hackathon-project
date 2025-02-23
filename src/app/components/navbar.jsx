@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 function navbar() {
     return (
-        <div className="fixed top-0 w-[100vw]">
+        <div className="w-[100vw]">
             <nav className="bg-blue-900 text-white p-4 flex justify-between items-center">
                 <h1 className="text-3xl font-bold text-orange-500">R<span className="text-white">ush</span> Radar</h1>
                 <div className="space-x-6 flex">
